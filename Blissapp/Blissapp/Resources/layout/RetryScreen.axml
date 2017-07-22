@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9E784">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/demoImageView"
+        android:scaleType="fitCenter"
+        android:src="@drawable/service"
+        android:layout_marginBottom="46.0dp"
+        android:layout_marginTop="0.0dp" />
+    <FrameLayout
+        android:id="@+id/FrameLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <ir.sohreco.circularpulsingbutton.CircularPulsingButton
+            android:id="@+id/btnRetry"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            app:cpb_text="Retry"            
+            app:cpb_color="#32213A"
+            app:cpb_textColor="#EEEEEE"
+            app:cpb_zoomOutScale="0.2" />
+    </FrameLayout>
+</LinearLayout>

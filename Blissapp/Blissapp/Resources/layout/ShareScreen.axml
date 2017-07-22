@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9E784"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <TextView
+        android:text="Email to: "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:id="@+id/textView1" />
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:hint="Enter Email Address"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="21.5dp" />
+    <TextView
+        android:text="Content url here!"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:id="@+id/tvContent" />
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+        <FrameLayout
+            android:id="@+id/FrameLayout01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <ir.sohreco.circularpulsingbutton.CircularPulsingButton
+                android:id="@+id/btnSend"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                app:cpb_text="Send"
+                app:cpb_color="#66c7f4"
+                app:cpb_textColor="#EEEEEE"
+                app:cpb_zoomOutScale="0.9" />
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

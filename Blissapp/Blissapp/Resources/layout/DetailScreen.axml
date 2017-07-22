@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9E784">
+    <TextView
+        android:text="Details"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:id="@+id/txtDetails"
+        android:layout_marginBottom="5.0dp" />
+    <TextView
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:id="@+id/txtID" />
+    <TextView
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:id="@+id/txtQuestion" />
+    <TextView
+        android:text="Image"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="22.5dp"
+        android:textColor="#000000"
+        android:id="@+id/textView1" />
+    <ImageView
+        android:src="@android:drawable/ic_menu_gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView_I" />
+    <TextView
+        android:text="Thumb"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="22.5dp"
+        android:textColor="#000000"
+        android:id="@+id/textView2" />
+    <ImageView
+        android:src="@android:drawable/ic_menu_gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView_T" />
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+        <FrameLayout
+            android:id="@+id/FrameLayout01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <ir.sohreco.circularpulsingbutton.CircularPulsingButton
+                android:id="@+id/btnShare"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                app:cpb_text="Share"
+                app:cpb_color="#66c7f4"
+                app:cpb_textColor="#EEEEEE"
+                app:cpb_zoomOutScale="0.9" />
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>
