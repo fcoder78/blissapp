@@ -1,3 +1,3 @@
 # Bliss Recruitment APP
 
-In order to run the app, download as .zip and compile the code.
+In order to run the app, download as .zip, connect your Android device and compile the code.
